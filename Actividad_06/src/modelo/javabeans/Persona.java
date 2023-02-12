@@ -73,7 +73,7 @@ public abstract class Persona {
 	 * Se crean los metodos propios, siendo trabajar abstracto
 	 */
 	public String llamar (Persona p) {
-		return nombre + "llamando a Carlos Robles";
+		return nombre + " llamando a " + p.getNombre();
 	}
 	public abstract String trabajar();
 	
