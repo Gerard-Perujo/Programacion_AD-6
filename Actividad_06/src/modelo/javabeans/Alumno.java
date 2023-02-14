@@ -59,16 +59,13 @@ public class Alumno extends Persona{
 	 * Aqui hemos sobreescrito el metodo toString de persona donde hay los gets
 	 * de Persona y la variable de la clase Alumno
 	 */
+
+
 	@Override
 	public String toString() {
-		return "Alumno [getNif()=" + getNif() + ", getNombre()=" + getNombre() + ", getDireccion()=" + getDireccion()
-				+ ", getTelefono()=" + getTelefono() + ", toString()=" + super.toString() + ", getClass()=" + getClass()
-				+ ", hashCode()=" + hashCode() + ", curso=" + curso + "]";
+		return "Alumno [Nif =" + getNif() + ", Nombre =" + getNombre() + ", Direccion =" + getDireccion()
+				+ ", Telefono =" + getTelefono() + "], curso =" + curso;
 	}
-
-
-
-	
 		
 	
 	/**
@@ -77,6 +74,7 @@ public class Alumno extends Persona{
 	 * @return devuelve un enunciado con el nombre del almuno que va hacer 
 	 * el examen
 	 */
+	
 	public String hacerExamen() {
 		return "El Alumno " + getNombre() + " va hacer su examen";
 	}
@@ -87,6 +85,7 @@ public class Alumno extends Persona{
 	 * un enunciado en el curso que va estudiar cogiendo el nombre de Persona y 
 	 * el curso en el que estudia
 	 */
+	
 	@Override
 	public String trabajar() {
 		return "El Alumno " + getNombre() + " va a estudiar para el " + curso;

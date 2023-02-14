@@ -60,16 +60,14 @@ public class Administrativo extends Persona{
 	 * Aqui hemos sobreescrito el metodo toString de persona donde hay los gets
 	 * de Persona y la variable de la clase Administrativo
 	 */
+	
 	@Override
 	public String toString() {
-		return "Administrativo [getNif()=" + getNif() + ", getNombre()=" + getNombre() + ", getDireccion()="
-				+ getDireccion() + ", getTelefono()=" + getTelefono() + ", toString()=" + super.toString()
-				+ ", getClass()=" + getClass() + ", hashCode()=" + hashCode() + ", tareas=" + tareas + "]";
+		return "Administrativo [Nif= " + getNif() + ", Nombre= " + getNombre() + ", Direccion= "
+				+ getDireccion() + ", Telefono= " + getTelefono() + "], tareas= " + tareas;
 	}
 
 
-
-	
 	/**
 	 * Creamos el metodo gestionMatricula() 
 	 * 
@@ -88,6 +86,7 @@ public class Administrativo extends Persona{
 	 * que tareas realiza cogiendo el nombre de Persona y tareas de Administrativo 
 	 * 
 	 */
+	
 	@Override
 	public String trabajar() {
 		return "El Administrativo " + getNombre() + " va a realizar estas tareas: " + tareas;

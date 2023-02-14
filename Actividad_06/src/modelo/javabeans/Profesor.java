@@ -60,13 +60,12 @@ public class Profesor extends Persona{
 	 * Aqui hemos sobreescrito el metodo toString de persona donde hay los gets
 	 * de Persona y la variable de Profesor
 	 */
+	
 	@Override
 	public String toString() {
-		return "Profesor [getNif()=" + getNif() + ", getNombre()=" + getNombre() + ", getDireccion()=" + getDireccion()
-				+ ", getTelefono()=" + getTelefono() + ", toString()=" + super.toString() + ", getClass()=" + getClass()
-				+ ", hashCode()=" + hashCode() + ", competencias=" + competencias + "]";
+		return "Profesor [Nif =" + getNif() + ", Nombre =" + getNombre() + ", Direccion =" + getDireccion()
+				+ ", Telefono =" + getTelefono() + "], competencias =" + competencias;
 	}
-
 
 	
 	/**
@@ -79,7 +78,6 @@ public class Profesor extends Persona{
 		return "El Profesor " + getNombre() + " va ha corregir los examenes";
 		
 	}
-
 
 
 	/**

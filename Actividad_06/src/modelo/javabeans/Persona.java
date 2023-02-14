@@ -63,6 +63,7 @@ public abstract class Persona {
 	/*
 	 * Se genera toString
 	 */
+	
 	@Override
 	public String toString() {
 		return "Persona [nif=" + nif + ", nombre=" + nombre + ", direccion=" + direccion + ", telefono=" + telefono
@@ -75,6 +76,8 @@ public abstract class Persona {
 	public String llamar (Persona p) {
 		return nombre + " llamando a " + p.getNombre();
 	}
+	
+
 	public abstract String trabajar();
 	
 	
